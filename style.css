@@ -1,0 +1,13 @@
+img {
+  width:100%
+}
+
+#logo {
+  width: 20%;
+}
+
+#home {
+  height: 100vh;
+  background: url("img/bg.png") no-repeat;
+  background-size: contain;
+}
