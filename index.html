@@ -1,47 +1,544 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Développeur Web Applications - Webfolio Baptiste Martin">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <title>Webfolio</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Webfolio Baptiste Martin</title>
+    <meta content="Développeur Web & Application - Webfolio Baptiste aArtin" name="description">
+    <meta content="développeur, logiciel, concepteur, applications, web, angular, javascript, symfony, typescript, react, vue, baptiste, martin, php, laravel, sql, base de données, bdd, alternance, wordpress, git, github, gitlab, sql, nosql, html, css, agile, ui, ux, photoshop, illustrator, indesign, adobe" name="keywords">
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
+
 <body>
-<header id="main-header">
-    <nav class="navbar bg-body-light fixed-bottom sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#home">
-                <img src="img/logo/logo-nt.png" id="logo" alt="Logo">
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item text-dark">
-                        <a class="nav-link  active" aria-current="page" href="#home">Accueil</a>
-                    </li>
-                    <li class="nav-item text-dark">
-                        <a class="nav-link text-dark" href="#about">A propos</a>
-                    </li>
-                    <li class="nav-item text-dark">
-                        <a class="nav-link text-dark" href="#projects">Projets</a>
-                    </li>
-                    <li class="nav-item text-dark">
-                        <a class="nav-link text-dark" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+
+<!-- ======= Mobile nav toggle button ======= -->
+<!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+<i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+<!-- ======= Header ======= -->
+<header id="header" class="d-flex flex-column justify-content-center">
+    <nav id="navbar" class="navbar nav-menu">
+        <ul>
+            <li><a href="#home" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+            <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>A propos</span></a></li>
+            <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+                <span>Projets</span></a></li>
+            <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a>
+            </li>
+        </ul>
     </nav>
 </header>
-    <section id="home">
-        <div class="">
+
+<!-- ======= Hero Section ======= -->
+<section id="home" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <h1>Baptiste Martin</h1>
+                <p>Je suis un <span class="typed"
+                                    data-typed-items="développeur web, développeur d'applications, web designer, concepteur"></span>
+                </p>
+                <div class="social-links">
+                    <a href="#" class="github"><i class="bx bxl-github"></i></a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 text-center">
+                <img src="assets/img/logo/logo-nt.png" alt="logo">
+            </div>
+        </div>
+    </div>
+</section>
+
+<main id="main">
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>A propos</h2>
+                <p>Originaire d'Ardèche dans la petite ville de Tournon-sur-Rhône, j'ai déménagé à Grenoble afin de
+                    poursuivre mes études dans le domaine qui me plaît: l'informatique.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="assets/img/me.jpg" class="img-fluid shadow" alt="">
+                </div>
+                <div class="col-lg-8 pt-4 pt-lg-0 content">
+                    <h3 class="mb-4">Développeur web & applications</h3>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul>
+                                <li><i class="bi bi-chevron-right"></i> <strong>N° tel:</strong>
+                                    <a href="tel:+33601191402">+33 6 01 19 14 02</a></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Ville:</strong>
+                                    <span>Grenoble</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Diplôme:</strong> <span>RNCP Niveau 6 Concepteur Développeur</span>
+                                </li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <a
+                                        href="mailto:baptiste.mrtn@outlook.com">baptiste.mrtn@outlook.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Compétences</h2>
+                <p>Ayant suivi plusieurs formations dans le domaine du développement et du design, j'ai pu acquérir de
+                    nombreuses compétences durant ces années.</p>
+            </div>
+
+            <div class="bubbles">
+                <div data-aos="fade-up"
+                     data-aos-anchor-placement="center-center">
+                    <div class="bubble">
+                        <img src="assets/img/me.jpg" alt="Image 1">
+                    </div>
+                </div>
+                <div class="bubble">
+                    <img src="assets/img/coding.jpg" alt="Image 2">
+                </div>
+                <div class="bubble">
+                    <img src="assets/img/me.jpg" alt="Image 3">
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Résumé</h2>
+                <p>Voici toutes mes expériences passées qui m'ont permis d'être celui que je suis
+                    professionnellement</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="resume-title">Formations</h3>
+                    <div class="resume-item">
+                        <h4>Concepteur Développeur d'Applications</h4>
+                        <h5>2023 - 2025</h5>
+                        <p><em>Le Campus Numérique In the Alps, Grenoble</em></p>
+                        <ul>
+                            <li>HTML / CSS / Javascript</li>
+                            <li>Java / Spring Boot</li>
+                            <li>SQL / NoSQL</li>
+                            <li>Git / Github / Gitlab</li>
+                            <li>Déploiement CI/CD</li>
+                            <li>C# / .Net</li>
+                            <li>Gestion de projet / Méthode Agile</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Développeur Full Stack </h4>
+                        <h5>2022 - 2023</h5>
+                        <p><em>3W Academy, Paris</em></p>
+                        <ul>
+                            <li>Typescript / Angular</li>
+                            <li>PHP / Symfony</li>
+                            <li>SQL / MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Développeur Web & Applications</h4>
+                        <h5>2021 - 2022</h5>
+                        <p><em>Le Campus Numérique In the Alps, Grenoble</em></p>
+                        <ul>
+                            <li>HTML / CSS</li>
+                            <li>Javascript / React / Vue</li>
+                            <li>PHP / Laravel</li>
+                            <li>SQL / NoSQL</li>
+                            <li>Git / Github</li>
+                            <li>UX / UI</li>
+                            <li>Méthode Agile</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Infographiste - Web Designer</h4>
+                        <h5>2018 - 2019</h5>
+                        <p><em>Brassart, Grenoble</em></p>
+                        <ul>
+                            <li>HTML / CSS / WordPress</li>
+                            <li>Photoshop / Illustrator / InDesign</li>
+                            <li>Digital Painting / Dessin</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="resume-title">Experiences professionnelles</h3>
+                    <div class="resume-item">
+                        <h4>Développeur</h4>
+                        <h5>2022 - 2023</h5>
+                        <p><em>Evolnet, Crolles</em></p>
+                        <ul>
+                            <li>Refonte d'une application d'envoi de SMS : Frizbi
+                                <ul>
+                                    <li>Typescript / Angular</li>
+                                    <li>PHP / Symfony</li>
+                                </ul>
+                            </li>
+                            <li>Maintenance d'une application de click and collect : <a href="https://localdrivy.fr"
+                                                                                        target="_blank">Localdrivy</a>
+                                <ul>
+                                    <li>Typescript / Angular</li>
+                                    <li>PHP / Symfony</li>
+                                </ul>
+                            </li>
+                            <li>Création de sites WordPress : <a href="https://www.detective-grenoble.fr/"
+                                                                 target="_blank">April Détectives</a>, <a
+                                    href="https://www.climjac.fr/" target="_blank">Climjac</a>
+                            </li>
+                            <li>Alternance de 1 an</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Développeur</h4>
+                        <h5>2021</h5>
+                        <p><em>Idretis, Grenoble</em></p>
+                        <ul>
+                            <li>Refonte de l'application take A Moment
+                                <ul>
+                                    <li>Javascript / React Native</li>
+                                </ul>
+                            </li>
+                            <li>Stage de 3 mois</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item">
+                        <h4>Graphiste</h4>
+                        <h5>2019</h5>
+                        <p><em>Avalon Digital, Meylan</em></p>
+                        <ul>
+                            <li>Création de boutons pour un jeu vidéo de statégie : <a href="https://carrier-battles.com/fr/accueil/" target="_blank" >Carrier Battles</a>
+                                <ul>
+                                    <li>Illustrator</li>
+                                </ul>
+                            </li>
+                            <li>Création de visuel pour un jeu de plateau : Corsica
+                                <ul>
+                                    <li>Photoshop</li>
+                                </ul>
+                            </li>
+                            <li>Stage de 3 mois</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Portfolio</h2>
+                <p>Voiçi mes créations de mes débuts jusqu'à aujourd'hui.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                    <ul id="portfolio-flters">
+                        <li data-filter="*" class="filter-active">Tout</li>
+                        <li data-filter=".filter-web">Web</li>
+                        <li data-filter=".filter-img">Visuel</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>App 1</h4>
+                            <p>App</p>
+                            <div class="portfolio-links">
+                                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
+                                   class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox"
+                                   data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Web 3</h4>
+                            <p>Web</p>
+                            <div class="portfolio-links">
+                                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
+                                   class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox"
+                                   data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>App 2</h4>
+                            <p>App</p>
+                            <div class="portfolio-links">
+                                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
+                                   class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox"
+                                   data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Card 2</h4>
+                            <p>Card</p>
+                            <div class="portfolio-links">
+                                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
+                                   class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox"
+                                   data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Web 2</h4>
+                            <p>Web</p>
+                            <div class="portfolio-links">
+                                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
+                                   class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox"
+                                   data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>App 3</h4>
+                            <p>App</p>
+                            <div class="portfolio-links">
+                                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
+                                   class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox"
+                                   data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Card 1</h4>
+                            <p>Card</p>
+                            <div class="portfolio-links">
+                                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
+                                   class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox"
+                                   data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                    <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Card 3</h4>
+                            <p>Card</p>
+                            <div class="portfolio-links">
+                                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
+                                   class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox"
+                                   data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                    <div class="portfolio-wrap">
+                        <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+                        <div class="portfolio-info">
+                            <h4>Web 3</h4>
+                            <p>Web</p>
+                            <div class="portfolio-links">
+                                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
+                                   class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                                <a href="portfolio-details.html" class="portfolio-details-lightbox"
+                                   data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Contact</h2>
+            </div>
+
+            <div class="row mt-1">
+
+                <div class="col-lg-4">
+                    <div class="info">
+                        <div class="address">
+                            <i class="bi bi-geo-alt"></i>
+                            <h4>Localisation:</h4>
+                            <p>Grenoble, France</p>
+                        </div>
+
+                        <div class="email">
+                            <i class="bi bi-envelope"></i>
+                            <h4>Email:</h4>
+                            <p><a href="mailto:baptiste.mrtn@outlook.com">baptiste.mrtn@outlook.com</a></p>
+                        </div>
+
+                        <div class="phone">
+                            <i class="bi bi-phone"></i>
+                            <h4>Téléphone:</h4>
+                            <p><a href="tel:+33601191402">+33 6 01 19 14 02</a></p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-8 mt-5 mt-lg-0">
+
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Votre nom"
+                                       required>
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                <input type="email" class="form-control" name="email" id="email"
+                                       placeholder="Votre email" required>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet"
+                                   required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                                      required></textarea>
+                        </div>
+                        <div class="my-3">
+                            <div class="loading">Chargement</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Votre message a bien été envoyé. Merci!</div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit">Envoyer</button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="container">
+        <img src="assets/img/logo/logo.png" alt="logo" class="w-25">
+        <div class="social-links">
+            <a href="#" class="github"><i class="bx bxl-github"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+        <div class="copyright">
+            &copy; Copyright <strong><span>Baptiste Martin</span></strong>
+        </div>
+        <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: [license-url] -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+    </div>
+</footer><!-- End Footer -->
+
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/typed.js/typed.umd.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
 </body>
+
 </html>

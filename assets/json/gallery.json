@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "title": "Effet Glitch",
+    "description": "Effet glitch - Réalisé sur Photoshop",
+    "source": "montage-glitch.png",
+    "category": "photoshop"
+  },
+  {
+    "id": 2,
+    "title": "Lettre à un Panda",
+    "description": "Incrustation d'une image dans une lettre - Réalisé sur Photoshop",
+    "source": "lettre-panda.png",
+    "category": "photoshop"
+  },
+  {
+    "id": 3,
+    "title": "Homme de nature",
+    "description": "Incrustation d'un personnage dans un décor - Réalisé sur Photoshop",
+    "source": "homme-nature.png",
+    "category": "photoshop"
+  },
+  {
+    "id": 4,
+    "title": "Loup des neiges",
+    "description": "Incrustation d'un décor dans un personnage - Réalisé sur Photoshop",
+    "source": "loup-neige.jpg",
+    "category": "photoshop"
+  },
+  {
+    "id": 5,
+    "title": "Abysses",
+    "description": "Incrustation d'un requin - Réalisé sur Photoshop",
+    "source": "abysses.jpg",
+    "category": "photoshop"
+  },
+  {
+    "id": 6,
+    "title": "First Panda",
+    "description": "Ma première réalisation, un panda capuché - Réalisé sur Photoshop",
+    "source": "panda1.jpg",
+    "category": "photoshop"
+  },
+  {
+    "id": 7,
+    "title": "Panda Desintegration",
+    "description": "Effet explosion sur un panda - Réalisé sur Photoshop",
+    "source": "panda-desintegre.jpg",
+    "category": "photoshop"
+  },
+  {
+    "id": 8,
+    "title": "Visage",
+    "description": "Dessin (gauche) et photo (droite) - Réalisé sur Photoshop en digital painting",
+    "source": "buste-dp.png",
+    "category": "digital-painting"
+  },
+  {
+    "id": 9,
+    "title": "Super-Héro Révélation",
+    "description": "Homme révélant son costume - Réalisé sur Photoshop",
+    "source": "homme-spiderman.jpg",
+    "category": "photoshop"
+  },
+  {
+    "id": 10,
+    "title": "Hommage à Stan Lee",
+    "description": "Low-poly de Stan Lee - Réalisé sur Illustrator",
+    "source": "stan-lee-tri.png",
+    "category": "illustrator"
+  },
+  {
+    "id": 11,
+    "title": "Grotte secrète",
+    "description": "Dessin d'un paysage - Réalisé sur Photoshop en digital painting",
+    "source": "paysage-dp.jpg",
+    "category": "digital-painting"
+  },
+  {
+    "id": 12,
+    "title": "Murder Polaroid",
+    "description": "Acteurs de la série Murder dans un montage Polaroid - Réalisé sur Photoshop",
+    "source": "murder.jpg",
+    "category": "photoshop"
+  },
+  {
+    "id": 13,
+    "title": "Pie",
+    "description": "Dessin d'une pie - Réalisé sur Photoshop en digital painting",
+    "source": "oiseau-noir.jpg",
+    "category": "digital-painting"
+  },
+  {
+    "id": 14,
+    "title": "Papillon",
+    "description": "Dessin d'un papillon - Réalisé sur Photoshop en digital painting",
+    "source": "papillon.jpg",
+    "category": "digital-painting"
+  },
+  {
+    "id": 15,
+    "title": "Moineau",
+    "description": "Dessin d'un moineau - Réalisé sur Photoshop en digital painting",
+    "source": "moineau.jpg",
+    "category": "digital-painting"
+  },
+  {
+    "id": 16,
+    "title": "Chouette destructrice",
+    "description": "Incrustation d'une chouette - Réalisé sur Photoshop",
+    "source": "chouette.jpg",
+    "category": "photoshop"
+  },
+  {
+    "id": 17,
+    "title": "Panda Low Poly",
+    "description": "Panda en low-poly - Réalisé sur Illustrator",
+    "source": "panda-tri.png",
+    "category": "illustrator"
+  },
+  {
+    "id": 18,
+    "title": "Panda Galery",
+    "description": "Panda au musée - Réalisé sur Photoshop",
+    "source": "panda-galerie.jpg",
+    "category": "photoshop"
+  }
+]
