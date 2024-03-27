@@ -152,64 +152,24 @@
 
 // build scenes
 
-        function getRandomPosition(min, max) {
-            return Math.floor(Math.random() * (max - min + 1)) + min;
-        }
 
-        let bubbles = document.getElementsByClassName("bubbles");
+        document.addEventListener("DOMContentLoaded", function () {
+            let bubbles = document.getElementsByClassName("bubbles");
 
-        for (let bubble of bubbles) {
-            let revealElements = bubble.getElementsByClassName("bubble");
-            for (let i = 0; i < revealElements.length; i++) { // create a scene for each element
-                new ScrollMagic.Scene({
-                    triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
-                    offset: 50,												 // start a little later
-                    triggerHook: 0.9,
-                })
-                    .setClassToggle(revealElements[i], "visible-" + i) // add class toggle
-                    .addTo(controller);
-                revealElements[i].classList.add("visibles") // add class toggle
-            }
-        }
-        let alreadyTaken = [];
-        let visibles = document.getElementsByClassName("visibles");
-        for (let visible of visibles) {
-            do {
-                let x = getRandomPosition(-400, 400);
-                let y = getRandomPosition(-145, 145);
-                console.log(x, y, alreadyTaken)
-                if (!checkOverlap(x, y, alreadyTaken)) {
-                    console.log("true")
-                    visible.style.opacity = "1";
-                    visible.style.transform = "translate(" + x + "px," + y + "px)";
-                    break;
-                } else {
-                    console.log("false")
-                }
-            } while (true)
-            alreadyTaken.push(visible);
-        }
-
-        function checkOverlap(x, y, squares) {
-            for (let i = 0; i < squares.length; i++) {
-                const rect1 = squares[i].getBoundingClientRect();
-                const rect2 = {
-                    left: x,
-                    top: y,
-                    right: x + 150,
-                    bottom: y + 150
-                }
-                if (!(rect1.right < rect2.left ||
-                    rect1.left > rect2.right ||
-                    rect1.bottom < rect2.top ||
-                    rect1.top > rect2.bottom)) {
-                    return true;
-                } else {
-                    return false
+            for (let bubble of bubbles) {
+                let revealElements = bubble.getElementsByClassName("bubble");
+                for (let i = 0; i < revealElements.length; i++) { // create a scene for each element
+                    new ScrollMagic.Scene({
+                        triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
+                        offset: 50,												 // start a little later
+                        triggerHook: 0.9,
+                    })
+                        .setClassToggle(revealElements[i], "visible-"+i) // add class toggle
+                        .addTo(controller);
                 }
             }
-        }
 
+        })
 
         /**
          * Porfolio isotope and filter

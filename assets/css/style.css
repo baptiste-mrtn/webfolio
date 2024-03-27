@@ -429,7 +429,7 @@ section {
 .bubbles{
   text-align: center;
   position: relative;
-  height: 40vh;
+  height: 50vh;
 }
 
 .bubble {
@@ -455,14 +455,109 @@ section {
   height: 110px;
 }
 
-.bubble img {
+.bubble img, .first-bubble img {
   max-width: 60%; /* ajustez la taille de l'image à l'intérieur de la bulle */
   max-height: 60%; /* ajustez la taille de l'image à l'intérieur de la bulle */
 }
 
-.bubble.first-bubble{
+.first-bubble{
   opacity: 1;
+  display: block;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  width: 100px; /* ajustez la largeur de la bulle selon vos besoins */
+  height: 100px; /* ajustez la hauteur de la bulle selon vos besoins */
+  border-radius: 50%;
+  background-color: rgba(9,82,40,25%);
+  transition: 1s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
 }
+
+.visible-0{
+  opacity: 1;
+  transform: translate(50%,-150%);
+}
+
+.visible-1{
+  opacity: 1;
+  transform: translate(90%,-50%);
+}
+
+.visible-2{
+  opacity: 1;
+  transform: translate(50%, 50%);
+}
+
+.visible-3{
+  opacity: 1;
+  transform: translate(-50%, 90%);
+}
+
+.visible-4{
+  opacity: 1;
+  transform: translate(-150%, 50%);
+}
+
+.visible-5{
+  opacity: 1;
+  transform: translate(-190%,-50%);
+}
+
+.visible-6{
+  opacity: 1;
+  transform: translate(-150%,-150%);
+}
+
+.visible-7{
+  opacity: 1;
+  transform: translate(-50%, -190%);
+}
+
+.visible-8{
+  opacity: 1;
+  transform: translate(160%,-135%);
+}
+
+.visible-9{
+  opacity: 1;
+  transform: translate(160%, 35%);
+}
+
+.visible-10{
+  opacity: 1;
+  transform: translate(40%, 160%);
+}
+
+.visible-11{
+  opacity: 1;
+  transform: translate(-140%, 160%);
+}
+
+.visible-12{
+  opacity: 1;
+  transform: translate(-260%, 45%);
+}
+
+.visible-13{
+  opacity: 1;
+  transform: translate(-260%, -140%);
+}
+
+.visible-14{
+  opacity: 1;
+  transform: translate(-140%, -260%);
+}
+
+.visible-15{
+  opacity: 1;
+  transform: translate(40%, -260%);
+}
+
 
 /*--------------------------------------------------------------
 # Resume
