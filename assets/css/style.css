@@ -450,7 +450,7 @@ section {
   margin: 0 auto;
 }
 
-.bubble:hover{
+.bubble:hover, .first-bubble:hover{
   width: 110px;
   height: 110px;
 }
@@ -627,8 +627,7 @@ section {
   margin-bottom: 30px;
 }
 
-.portfolio #portfolio-flters {
-  padding: 0;
+.portfolio #portfolio-filters {
   margin: 0 auto 25px auto;
   list-style: none;
   text-align: center;
@@ -637,7 +636,7 @@ section {
   padding: 2px 15px;
 }
 
-.portfolio #portfolio-flters li {
+.portfolio #portfolio-filters li {
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px;
@@ -650,12 +649,12 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-filters li:hover,
+.portfolio #portfolio-filters li.filter-active {
   color: #095228;
 }
 
-.portfolio #portfolio-flters li:last-child {
+.portfolio #portfolio-filters li:last-child {
   margin-right: 0;
 }
 
