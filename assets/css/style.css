@@ -427,12 +427,20 @@ section {
   color: #095228;
 }
 
-.cv::before {
-  content: "{";
+.cv{
+  transition: 1s;
 }
-.cv::after {
-  content: "}";
+
+.brackets{
+  margin: 10px;
+  transition: 1s;
 }
+
+.cv:hover>.brackets{
+  margin: 20%;
+  transition:1s;
+}
+
 
 /*--------------------------------------------------------------
 # Skills
@@ -449,6 +457,7 @@ section {
   text-align: center;
   align-content: center;
   align-items: center;
+  -webkit-align-items: center;
   width: 100px; /* ajustez la largeur de la bulle selon vos besoins */
   height: 100px; /* ajustez la hauteur de la bulle selon vos besoins */
   border-radius: 50%;
@@ -636,6 +645,10 @@ section {
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
+}
+
+.portfolio .portfolio-item .portfolio-wrap {
+  box-shadow: 5px 5px 8px #095228;
 }
 
 .portfolio #portfolio-filters {

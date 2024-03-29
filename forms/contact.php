@@ -1,41 +1,32 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+  $receiving_email_address = 'baptiste.mrtn@outlook.com';
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
+if(isset($_POST['envoyer'])){
+  if(empty($_POST['mail'])) {
+    echo '<p class="error-message">Le champ mail est vide.</p>';
+  }elseif(!preg_match("#^[a-z0-9_-]+((\.[a-z0-9_-]+){1,})?@[a-z0-9_-]+((\.[a-z0-9_-]+){1,})?\.[a-z]{2,}$#i", $_POST['mail'])){
+    echo '<p class="error-message">L\'adresse mail entrée est incorrecte.</p>';
+  }elseif(empty($_POST['sujet'])){
+    echo '<p class="error-message">Le champ sujet est vide.</p>';
+  }elseif(empty($_POST['message'])){
+    echo '<p class="error-message">Le champ message est vide.</p>';
+  }else{
+    $mail_de_lutilisateur = $_POST['mail'];
+    $entetes_du_mail = [];
+    $entetes_du_mail[] = 'MIME-Version: 1.0';
+    $entetes_du_mail[] = 'Content-type: text/html; charset=UTF-8';
+    $entetes_du_mail[] = 'From: Webfolio <' . $mail_de_lutilisateur . '>';
+    $entetes_du_mail[] = 'Reply-To: Webfolio <' . $mail_de_lutilisateur . '>';
+    $entetes_du_mail = implode("\r\n", $entetes_du_mail);
+    $sujet = '=?UTF-8?B?' . base64_encode($_POST['sujet']) . '?=';
+    $message = htmlentities($_POST['message'], ENT_QUOTES, 'UTF-8');
+    $message = nl2br($message);
+    if(mail($receiving_email_address, $sujet, $message, $entetes_du_mail)){
+      echo '<p class="sent-message">Votre message a bien été envoyé. Merci!</p>';
+    }else{
+      echo '<p class="error-message">Une erreur est survenue, le mail n\'a pas été envoyé.</p>';
+    }
   }
-
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
-
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
-
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
-
-  echo $contact->send();
+}
 ?>
