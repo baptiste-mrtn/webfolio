@@ -15,8 +15,8 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
     <meta content="Développeur Web & Application - Webfolio Baptiste aArtin" name="description">
     <meta content="développeur, logiciel, concepteur, applications, web, angular, javascript, symfony, typescript, react, vue, baptiste, martin, php, laravel, sql, base de données, bdd, alternance, wordpress, git, github, gitlab, sql, nosql, html, css, agile, ui, ux, photoshop, illustrator, indesign, adobe"
           name="keywords">
-    <link href="assets/img/logo/logo-nt.png" rel="icon">
-    <link href="assets/img/logo/logo-nt.png" rel="apple-touch-icon">
+    <link href="assets/img/logo/logo-nt.webp" rel="icon">
+    <link href="assets/img/logo/logo-nt.webp" rel="apple-touch-icon">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
           rel="stylesheet">
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -66,7 +66,7 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
                 </div>
             </div>
             <div class="col-12 col-lg-6 text-center">
-                <img alt="logo" src="assets/img/logo/logo-nt.png">
+                <img alt="logo" src="assets/img/logo/logo-nt.webp">
             </div>
         </div>
     </div>
@@ -351,7 +351,7 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/web/climjac.png">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/web/climjac.webp">
                         <div class="portfolio-info">
                             <h4>ClimJac</h4>
                             <p>Site vitrine pour installation de climatiseur</p>
@@ -365,7 +365,7 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/web/april-detectives.png">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/web/april-detectives.webp">
                         <div class="portfolio-info">
                             <h4>April Detectives</h4>
                             <p>Site vitrine pour détective privé</p>
@@ -380,7 +380,7 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/web/route-buissonniere.png">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/web/route-buissonniere.webp">
                         <div class="portfolio-info">
                             <h4>La Route Buissonnière</h4>
                             <p>Site vitrine pour un gîte en Drôme</p>
@@ -395,7 +395,7 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/web/wata.png">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/web/wata.webp">
                         <div class="portfolio-info">
                             <h4>Wata</h4>
                             <p>Site fictif en HTML CSS</p>
@@ -409,7 +409,7 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/web/freelo.png">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/web/freelo.webp">
                         <div class="portfolio-info">
                             <h4>Freelo</h4>
                             <p>Site fictif en HTML CSS</p>
@@ -423,7 +423,7 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/web/momna.png">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/web/momna.webp">
                         <div class="portfolio-info">
                             <h4>Momna</h4>
                             <p>Site fictif en HTML CSS</p>
@@ -437,7 +437,7 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/web/labyrinthe.png">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/web/labyrinthe.webp">
                         <div class="portfolio-info">
                             <h4>Labyrinthe</h4>
                             <p>Labyrinthe créé en Javascript</p>
@@ -451,7 +451,7 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/web/rps.png">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/web/rps.webp">
                         <div class="portfolio-info">
                             <h4>Rock Paper Scissors</h4>
                             <p>Jeu pierre papier ciseaux en Javascript</p>
@@ -466,7 +466,7 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/web/subway.png">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/web/subway.webp">
                         <div class="portfolio-info">
                             <h4>SubWay de luxe</h4>
                             <p>Site fictif en WordPress</p>
@@ -480,14 +480,14 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-img">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/montage-glitch.png">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/montage-glitch.webp">
                         <div class="portfolio-info">
                             <h4>Effet Glitch</h4>
                             <p>Effet glitch - Réalisé sur Photoshop</p>
                             <div class="portfolio-links">
                                 <a class="portfolio-lightbox"
                                    data-gallery="portfolioGallery"
-                                   href="assets/img/portfolio/visuals/montage-glitch.png" title="Effet Glitch"><i class="bx bx-plus"></i></a>
+                                   href="assets/img/portfolio/visuals/montage-glitch.webp" title="Effet Glitch"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -495,13 +495,13 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-img">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/lettre-panda.png">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/lettre-panda.webp">
                         <div class="portfolio-info">
                             <h4>Lettre a un panda</h4>
                             <p>Incrustation d'une image dans une lettre - Réalisé sur Photoshop</p>
                             <div class="portfolio-links">
                                 <a class="portfolio-lightbox" data-gallery="portfolioGallery"
-                                   href="assets/img/portfolio/visuals/lettre-panda.png" title="Lettre a un panda"><i class="bx bx-plus"></i></a>
+                                   href="assets/img/portfolio/visuals/lettre-panda.webp" title="Lettre a un panda"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -509,13 +509,13 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-img">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/homme-nature.png">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/homme-nature.webp">
                         <div class="portfolio-info">
                             <h4>Homme de nature</h4>
                             <p>Incrustation d'un personnage dans un décor - Réalisé sur Photoshop</p>
                             <div class="portfolio-links">
                                 <a class="portfolio-lightbox" data-gallery="portfolioGallery"
-                                   href="assets/img/portfolio/visuals/homme-nature.png" title="Homme de nature"><i class="bx bx-plus"></i></a>
+                                   href="assets/img/portfolio/visuals/homme-nature.webp" title="Homme de nature"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -523,13 +523,13 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-img">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/loup-neige.jpg">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/loup-neige.webp">
                         <div class="portfolio-info">
                             <h4>Loup des neiges</h4>
                             <p>Incrustation d'un décor dans un personnage - Réalisé sur Photoshop</p>
                             <div class="portfolio-links">
                                 <a class="portfolio-lightbox" data-gallery="portfolioGallery"
-                                   href="assets/img/portfolio/visuals/loup-neige.jpg" title="Loup des neiges"><i class="bx bx-plus"></i></a>
+                                   href="assets/img/portfolio/visuals/loup-neige.webp" title="Loup des neiges"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -537,13 +537,13 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-img">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/abysses.jpg">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/abysses.webp">
                         <div class="portfolio-info">
                             <h4>Abysses</h4>
                             <p>Incrustation d'un requin - Réalisé sur Photoshop</p>
                             <div class="portfolio-links">
                                 <a class="portfolio-lightbox" data-gallery="portfolioGallery"
-                                   href="assets/img/portfolio/visuals/abysses.jpg" title="Abysses"><i class="bx bx-plus"></i></a>
+                                   href="assets/img/portfolio/visuals/abysses.webp" title="Abysses"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -551,13 +551,13 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-img">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/panda1.jpg">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/panda1.webp">
                         <div class="portfolio-info">
                             <h4>First Panda</h4>
                             <p>Ma première réalisation, un panda capuché - Réalisé sur Photoshop</p>
                             <div class="portfolio-links">
                                 <a class="portfolio-lightbox" data-gallery="portfolioGallery"
-                                   href="assets/img/portfolio/visuals/panda1.jpg" title="First Panda"><i class="bx bx-plus"></i></a>
+                                   href="assets/img/portfolio/visuals/panda1.webp" title="First Panda"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -565,14 +565,14 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-img">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/panda-desintegre.jpg">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/panda-desintegre.webp">
                         <div class="portfolio-info">
                             <h4>Panda Desintegration</h4>
                             <p>Effet explosion sur un panda - Réalisé sur Photoshop</p>
                             <div class="portfolio-links">
                                 <a class="portfolio-lightbox"
                                    data-gallery="portfolioGallery"
-                                   href="assets/img/portfolio/visuals/panda-desintegre.jpg" title="Panda Desintegration"><i
+                                   href="assets/img/portfolio/visuals/panda-desintegre.webp" title="Panda Desintegration"><i
                                         class="bx bx-plus"></i></a>
                             </div>
                         </div>
@@ -581,13 +581,13 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-img">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/buste-dp.png">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/buste-dp.webp">
                         <div class="portfolio-info">
                             <h4>Visage</h4>
                             <p>Dessin (gauche) et photo (droite) - Réalisé sur Photoshop en digital painting</p>
                             <div class="portfolio-links">
                                 <a class="portfolio-lightbox" data-gallery="portfolioGallery"
-                                   href="assets/img/portfolio/visuals/buste-dp.png" title="Visage"><i class="bx bx-plus"></i></a>
+                                   href="assets/img/portfolio/visuals/buste-dp.webp" title="Visage"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -595,14 +595,14 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-img">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/homme-spiderman.jpg">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/homme-spiderman.webp">
                         <div class="portfolio-info">
                             <h4>Super-Héro Révélation</h4>
                             <p>Homme révélant son costume - Réalisé sur Photoshop</p>
                             <div class="portfolio-links">
                                 <a class="portfolio-lightbox"
                                    data-gallery="portfolioGallery"
-                                   href="assets/img/portfolio/visuals/homme-spiderman.jpg" title="Super-Héro Révélation"><i
+                                   href="assets/img/portfolio/visuals/homme-spiderman.webp" title="Super-Héro Révélation"><i
                                         class="bx bx-plus"></i></a>
                             </div>
                         </div>
@@ -611,13 +611,13 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-img">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/stan-lee-tri.png">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/stan-lee-tri.webp">
                         <div class="portfolio-info">
                             <h4>Hommage à Stan Lee</h4>
                             <p>Low-poly de Stan Lee - Réalisé sur Illustrator</p>
                             <div class="portfolio-links">
                                 <a class="portfolio-lightbox" data-gallery="portfolioGallery"
-                                   href="assets/img/portfolio/visuals/stan-lee-tri.png" title="Hommage à Stan Lee"><i class="bx bx-plus"></i></a>
+                                   href="assets/img/portfolio/visuals/stan-lee-tri.webp" title="Hommage à Stan Lee"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -625,13 +625,13 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-img">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/chouette.jpg">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/chouette.webp">
                         <div class="portfolio-info">
                             <h4>Chouette destructrice</h4>
                             <p>Incrustation d'une chouette - Réalisé sur Photoshop</p>
                             <div class="portfolio-links">
                                 <a class="portfolio-lightbox" data-gallery="portfolioGallery"
-                                   href="assets/img/portfolio/visuals/chouette.jpg" title="Chouette destructrice"><i
+                                   href="assets/img/portfolio/visuals/chouette.webp" title="Chouette destructrice"><i
                                         class="bx bx-plus"></i></a>
                             </div>
                         </div>
@@ -640,13 +640,13 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-img">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/moineau.jpg">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/moineau.webp">
                         <div class="portfolio-info">
                             <h4>Moineau</h4>
                             <p>Dessin d'un moineau - Réalisé sur Photoshop en digital painting</p>
                             <div class="portfolio-links">
                                 <a class="portfolio-lightbox" data-gallery="portfolioGallery"
-                                   href="assets/img/portfolio/visuals/moineau.jpg" title="Moineau"><i class="bx bx-plus"></i></a>
+                                   href="assets/img/portfolio/visuals/moineau.webp" title="Moineau"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -654,13 +654,13 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-img">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/oiseau-noir.jpg">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/oiseau-noir.webp">
                         <div class="portfolio-info">
                             <h4>Pie</h4>
                             <p>Dessin d'une pie - Réalisé sur Photoshop en digital painting</p>
                             <div class="portfolio-links">
                                 <a class="portfolio-lightbox" data-gallery="portfolioGallery"
-                                   href="assets/img/portfolio/visuals/oiseau-noir.jpg" title="Pie"><i class="bx bx-plus"></i></a>
+                                   href="assets/img/portfolio/visuals/oiseau-noir.webp" title="Pie"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -668,13 +668,13 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-img">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/papillon.jpg">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/papillon.webp">
                         <div class="portfolio-info">
                             <h4>Papillon</h4>
                             <p>Dessin d'un papillon - Réalisé sur Photoshop en digital painting</p>
                             <div class="portfolio-links">
                                 <a class="portfolio-lightbox" data-gallery="portfolioGallery"
-                                   href="assets/img/portfolio/visuals/papillon.jpg" title="Papillon"><i class="bx bx-plus"></i></a>
+                                   href="assets/img/portfolio/visuals/papillon.webp" title="Papillon"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -682,13 +682,13 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-img">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/panda-tri.png">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/panda-tri.webp">
                         <div class="portfolio-info">
                             <h4>Panda Low Poly</h4>
                             <p>Panda en low-poly - Réalisé sur Illustrator</p>
                             <div class="portfolio-links">
                                 <a class="portfolio-lightbox" data-gallery="portfolioGallery"
-                                   href="assets/img/portfolio/visuals/panda-tri.png" title="Panda Low Poly"><i class="bx bx-plus"></i></a>
+                                   href="assets/img/portfolio/visuals/panda-tri.webp" title="Panda Low Poly"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -696,13 +696,13 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-img">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/panda-galerie.jpg">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/panda-galerie.webp">
                         <div class="portfolio-info">
                             <h4>Panda Galery</h4>
                             <p>Panda au musée - Réalisé sur Photoshop</p>
                             <div class="portfolio-links">
                                 <a class="portfolio-lightbox" data-gallery="portfolioGallery"
-                                   href="assets/img/portfolio/visuals/panda-galerie.jpg" title="Panda Galery"><i class="bx bx-plus"></i></a>
+                                   href="assets/img/portfolio/visuals/panda-galerie.webp" title="Panda Galery"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -710,13 +710,13 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-img">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/honey.png">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/honey.webp">
                         <div class="portfolio-info">
                             <h4>Comtesse Honey</h4>
                             <p>Montage d'un de mes lapines - Réalisé sur Photoshop</p>
                             <div class="portfolio-links">
                                 <a class="portfolio-lightbox" data-gallery="portfolioGallery"
-                                   href="assets/img/portfolio/visuals/honey.png" title="Comtesse Honey"><i class="bx bx-plus"></i></a>
+                                   href="assets/img/portfolio/visuals/honey.webp" title="Comtesse Honey"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -724,13 +724,13 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 
                 <div class="col-lg-4 col-md-6 portfolio-item filter-img">
                     <div class="portfolio-wrap">
-                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/ruby.png">
+                        <img alt="" class="img-fluid" src="assets/img/portfolio/visuals/ruby.webp">
                         <div class="portfolio-info">
                             <h4>Comtesse Ruby</h4>
                             <p>Montage d'un de mes lapines - Réalisé sur Photoshop</p>
                             <div class="portfolio-links">
                                 <a class="portfolio-lightbox" data-gallery="portfolioGallery"
-                                   href="assets/img/portfolio/visuals/ruby.png" title="Comtesse Ruby"><i class="bx bx-plus"></i></a>
+                                   href="assets/img/portfolio/visuals/ruby.webp" title="Comtesse Ruby"><i class="bx bx-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -804,7 +804,7 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
 <!-- ======= Footer ======= -->
 <footer id="footer">
     <div class="container">
-        <img alt="logo" class="w-25" src="assets/img/logo/logo.png">
+        <img alt="logo" class="w-25" src="assets/img/logo/logo.webp">
         <div class="social-links">
             <a class="github" href="https://github.com/baptiste-mrtn" target="_blank"><i
                     class="bx bxl-github"></i></a>
