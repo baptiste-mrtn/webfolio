@@ -1,41 +1,56 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
+session_start();
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+require_once __DIR__ . '/../autoload.php';
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+use Dotenv\Dotenv;
+use PHPMailer\PHPMailer\PHPMailer;
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+// Charger les variables d'environnement
+$dotenv = Dotenv::createImmutable(dirname(__DIR__)); // Racine du projet
+$dotenv->load();
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
+$mail = new PHPMailer(true);
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
+try {
+    // Validation des données
+    $name = htmlspecialchars($_POST['name']);
+    $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
+    $subject = htmlspecialchars($_POST['subject']);
+    $message = htmlspecialchars($_POST['message']);
 
-  echo $contact->send();
-?>
+    if (!$email) {
+        die('Erreur: Adresse email invalide.');
+    }
+
+    // Validation CAPTCHA
+    if (!isset($_SESSION['captcha_result']) || $_POST['captcha'] != $_SESSION['captcha_result']) {
+        die('Erreur: Réponse CAPTCHA incorrecte.');
+    }
+    unset($_SESSION['captcha_result']); // Supprime la session après validation
+
+    // Configuration SMTP
+    $mail->isSMTP();
+    $mail->Host = $_ENV['SMTP_HOST'];
+    $mail->SMTPAuth = true;
+    $mail->Username = $_ENV['SMTP_USERNAME'];
+    $mail->Password = $_ENV['SMTP_PASSWORD'];
+    $mail->SMTPSecure = $_ENV['SMTP_SECURE'];
+    $mail->Port = $_ENV['SMTP_PORT'];
+
+    // Expéditeur et destinataire
+    $mail->setFrom($_ENV['SMTP_USERNAME'], 'Baptiste Martin'); // Adresse SMTP par défaut
+    $mail->addReplyTo($email, $name); // L'utilisateur comme adresse de réponse
+    $mail->addAddress('contact@martinbaptiste.fr'); // Destinataire principal
+
+    // Contenu de l'email
+    $mail->isHTML(false); // Email en texte brut
+    $mail->Subject = $subject;
+    $mail->Body = "Nom: $name\nEmail: $email\n\n$message";
+
+    // Envoi
+    $mail->send();
+    echo 'OK';
+} catch (Exception $e) {
+    echo 'Erreur: L\'envoi a échoué. ' . $mail->ErrorInfo;
+}
