@@ -780,7 +780,11 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
                         </div>
                         <div class="my-3">
                             <div class="loading">Chargement</div>
-                            <div class="error-message"></div>
+                            <div class="error-message">
+                                <?=
+                                $_SESSION['error']; // Stocke la réponse dans la session
+                                ?>
+                            </div>
                             <div class="sent-message">Votre message a bien été envoyé. Merci!</div>
                         </div>
                         <div class="text-center">

@@ -37,6 +37,6 @@ require_once __DIR__ . '/assets/vendor/Result-Type/src/Error.php';
 require_once __DIR__ . '/assets/vendor/php-option/src/PhpOption/Some.php';
 require_once __DIR__ . '/assets/vendor/php-option/src/PhpOption/Option.php';
 require_once __DIR__ . '/assets/vendor/php-option/src/PhpOption/None.php';
-require_once __DIR__ . '/assets/vendor/phpmailer/src/PHPMailer.php';
-require_once __DIR__ . '/assets/vendor/phpmailer/src/SMTP.php';
+require_once __DIR__ . '/assets/vendor/PHPMailer/src/PHPMailer.php';
+require_once __DIR__ . '/assets/vendor/PHPMailer/src/SMTP.php';
 require_once __DIR__ . '/assets/vendor/phpdotenv/src/Dotenv.php';

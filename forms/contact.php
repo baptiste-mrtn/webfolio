@@ -6,19 +6,30 @@ require_once __DIR__ . '/../autoload.php';
 use Dotenv\Dotenv;
 use PHPMailer\PHPMailer\PHPMailer;
 
+ini_set('log_errors', 1);
+ini_set('error_log', __DIR__ . '/../php_error.log'); // Assurez-vous que le dossier a les bonnes permissions
+error_reporting(E_ALL);
+
+
 // Charger les variables d'environnement
 $dotenv = Dotenv::createImmutable(dirname(__DIR__)); // Racine du projet
 $dotenv->load();
 
 $mail = new PHPMailer(true);
 
+// Vérifier si la requête est AJAX
+if ($_SERVER['HTTP_X_REQUESTED_WITH'] != 'XMLHttpRequest') {
+    die('Accès interdit');
+}
+
 try {
     // Validation des données
-    $name = htmlspecialchars($_POST['name']);
-    $email = filter_var($_POST['email'], FILTER_VALIDATE_EMAIL);
-    $subject = htmlspecialchars($_POST['subject']);
-    $message = htmlspecialchars($_POST['message']);
+    $name = isset($_POST['name']) ? htmlspecialchars($_POST['name']) : '';
+    $email = isset($_POST['email']) ? filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) : '';
+    $subject = isset($_POST['subject']) ? htmlspecialchars($_POST['subject']) : '';
+    $message = isset($_POST['message']) ? htmlspecialchars($_POST['message']) : '';
 
+    // Vérification de l'email
     if (!$email) {
         die('Erreur: Adresse email invalide.');
     }
@@ -27,7 +38,7 @@ try {
     if (!isset($_SESSION['captcha_result']) || $_POST['captcha'] != $_SESSION['captcha_result']) {
         die('Erreur: Réponse CAPTCHA incorrecte.');
     }
-    unset($_SESSION['captcha_result']); // Supprime la session après validation
+    unset($_SESSION['captcha_result']); // Supprimer la session après validation
 
     // Configuration SMTP
     $mail->isSMTP();
@@ -50,7 +61,7 @@ try {
 
     // Envoi
     $mail->send();
-    echo 'OK';
+    echo 'OK'; // Retourner un message de succès
 } catch (Exception $e) {
     echo 'Erreur: L\'envoi a échoué. ' . $mail->ErrorInfo;
 }
