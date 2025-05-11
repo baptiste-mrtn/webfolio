@@ -57,23 +57,24 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
     <!-- ======= Hero Section ======= -->
     <section class="d-flex flex-column justify-content-center" id="home">
         <div class="container" data-aos="zoom-in" data-aos-delay="100">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-12 col-lg-6">
                     <h1>Baptiste Martin</h1>
-                    <p>Je suis un <span class="typed"
-                            data-typed-items="développeur web, développeur d'applications, web designer, concepteur"></span>
-                    </p>
+                    <p>Je suis un <span class="typed" data-typed-items="développeur web, développeur d'applications, web designer, concepteur"></span></p>
                     <div class="social-links">
-                        <a class="github" href="https://github.com/baptiste-mrtn" target="_blank"><i
-                                class="bx bxl-github"></i></a>
-                        <a class="linkedin" href="https://www.linkedin.com/in/baptistemrtn/" target="_blank"><i
-                                class="bx bxl-linkedin"></i></a>
+                        <a class="github" href="https://github.com/baptiste-mrtn" target="_blank" data-aos="fade-up" data-aos-delay="200"><i class="bx bxl-github"></i></a>
+                        <a class="linkedin" href="https://www.linkedin.com/in/baptistemrtn/" target="_blank" data-aos="fade-up" data-aos-delay="300"><i class="bx bxl-linkedin"></i></a>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 text-center">
-                    <img alt="logo" src="assets/img/logo/logo.webp">
+                <div class="col-12 col-lg-6 text-center" data-aos="fade-left" data-aos-delay="200">
+                    <img alt="logo" src="assets/img/logo/logo.webp" class="hero-logo">
                 </div>
             </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about">
+                <i class="bx bx-chevron-down"></i>
+            </a>
         </div>
     </section>
 
@@ -82,54 +83,42 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
                     <h2>A propos</h2>
-                    <p>Originaire d'Ardèche dans la petite ville de Tournon-sur-Rhône, j'ai déménagé à Grenoble afin de
-                        poursuivre mes études dans le domaine qui me plaît: l'informatique.</p>
+                    <p>Originaire d'Ardèche dans la petite ville de Tournon-sur-Rhône, j'ai déménagé à Grenoble afin de poursuivre mes études dans le domaine qui me plaît: l'informatique.</p>
                 </div>
 
                 <div class="row align-items-center">
-                    <div class="col-lg-3">
-                        <img alt="" class="img-fluid shadow rounded-circle" src="assets/img/me.png">
+                    <div class="col-lg-3" data-aos="fade-right" data-aos-delay="100">
+                        <img alt="" class="img-fluid profile-img" src="assets/img/me.png">
                     </div>
-                    <div class="col-lg-9 pt-4 pt-lg-0 content">
+                    <div class="col-lg-9 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="200">
                         <h3 class="mb-4">Développeur web & applications</h3>
                         <div class="row">
                             <div class="col-lg-6">
                                 <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Ville:</strong>
-                                        <span>Vienne</span>
-                                    </li>
+                                    <li><i class="bi bi-geo-alt"></i> <strong>Ville:</strong> <span>Vienne</span></li>
                                 </ul>
                             </div>
                             <div class="col-lg-6">
                                 <ul>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Niveau:</strong> <span>Concepteur Développeur</span>
-                                    </li>
+                                    <li><i class="bi bi-mortarboard"></i> <strong>Niveau:</strong> <span>Concepteur Développeur</span></li>
                                 </ul>
                             </div>
                             <div class="col-12">
                                 <p class="intro mb-4"><strong>Hello World, </strong><br>
-                                    Ayant un fort attrait pour le domaine de l'informatique depuis mon plus jeune âge, je
-                                    suis venu à Grenoble pour faire des études de <strong>graphiste</strong> car le métier me plaisait et je
-                                    souhaitais connaître les différentes facettes d'un artiste du numérique.
+                                    Ayant un fort attrait pour le domaine de l'informatique depuis mon plus jeune âge, je suis venu à Grenoble pour faire des études de <strong>graphiste</strong> car le métier me plaisait et je souhaitais connaître les différentes facettes d'un artiste du numérique.
                                     <br>
-                                    C'est en suivant ces cours que j'ai pu découvrir une porte d'entrée vers la
-                                    <strong>programmation</strong> et le <strong>développement web</strong> qui m'a pour le coup intrigué. <br>
-                                    J'ai donc, au fil des années, poursuit les études dans cette voie pour y découvrir les
-                                    multitudes de langages qui s'offraient à moi et au monde entier.
+                                    C'est en suivant ces cours que j'ai pu découvrir une porte d'entrée vers la <strong>programmation</strong> et le <strong>développement web</strong> qui m'a pour le coup intrigué. <br>
+                                    J'ai donc, au fil des années, poursuit les études dans cette voie pour y découvrir les multitudes de langages qui s'offraient à moi et au monde entier.
                                     <br>
-                                    Grâce à mes connaissances et mes compétences, j'ai décidé de créer ce webfolio afin de
-                                    pouvoir montrer aux autres mon parcours et mes différents projets réalisés au cours de
-                                    mon existence.
+                                    Grâce à mes connaissances et mes compétences, j'ai décidé de créer ce webfolio afin de pouvoir montrer aux autres mon parcours et mes différents projets réalisés au cours de mon existence.
                                 </p>
-
                             </div>
-                            <div class="col-12 text-center cv-container">
+                            <div class="col-12 text-center cv-container" data-aos="fade-up" data-aos-delay="300">
                                 <a class="cv" href="assets/pdf/CV-Baptiste-Martin.pdf">Télécharger le CV</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -329,7 +318,6 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
         <!-- ======= Portfolio Section ======= -->
         <section class="portfolio section-bg" id="portfolio">
             <div class="container" data-aos="fade-up">
-
                 <div class="section-title">
                     <h2>Portfolio</h2>
                     <p>Voiçi mes créations de mes débuts jusqu'à aujourd'hui.</p>
@@ -353,8 +341,12 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
                 </div>
 
                 <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200" style="display: none;">
-                    <?php foreach ($portfolioItems as $item): ?>
-                        <div class="col-lg-4 col-md-6 portfolio-item <?= $item['filter'] ?>">
+                    <?php 
+                    $delay = 0;
+                    foreach ($portfolioItems as $item): 
+                        $delay += 100;
+                    ?>
+                        <div class="col-lg-4 col-md-6 portfolio-item <?= $item['filter'] ?>" data-aos="fade-up" data-aos-delay="<?= $delay ?>">
                             <div class="portfolio-wrap">
                                 <img alt="<?= $item['title'] ?>" class="img-fluid" src="<?= $item['img'] ?>" loading="lazy">
                                 <div class="portfolio-info">
@@ -448,11 +440,7 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
                 &copy; Copyright <strong><span>Baptiste Martin</span></strong>
             </div>
             <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing information: [license-url] -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                <a href="#" onclick="openModal(); return false;">Mentions Légales</a> | Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
             </div>
         </div>
     </footer><!-- End Footer -->
@@ -476,6 +464,73 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
     <script src="assets/js/main.js"></script>
     <script src="assets/js/skills.js"></script>
 
+    <!-- Modal Mentions Légales -->
+    <div class="modal-overlay" id="legalModal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2>Mentions Légales</h2>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-content">
+                <h3>1. Informations légales</h3>
+                <p>Ce site est édité par :</p>
+                <ul>
+                    <li>Nom : Baptiste Martin</li>
+                    <li>Statut : Micro-entrepreneur</li>
+                    <li>Adresse : 45 rue Druge, 38200 Vienne</li>
+                    <li>Email : contact@martinbaptiste.fr</li>
+                    <li>N° SIRET : 93065512100026</li>
+                </ul>
+
+                <h3>2. Hébergement</h3>
+                <p>Ce site est hébergé par :</p>
+                <ul>
+                    <li>OVH SAS</li>
+                    <li>2 rue Kellermann</li>
+                    <li>59100 Roubaix - France</li>
+                </ul>
+
+                <h3>3. Propriété intellectuelle</h3>
+                <p>L'ensemble de ce site relève de la législation française et internationale sur le droit d'auteur et la propriété intellectuelle. Tous les droits de reproduction sont réservés, y compris pour les documents téléchargeables et les représentations iconographiques et photographiques.</p>
+
+                <h3>4. Protection des données personnelles</h3>
+                <p>Conformément à la loi "Informatique et Libertés" du 6 janvier 1978 modifiée et au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification et de suppression des données vous concernant.</p>
+                <p>Pour exercer ce droit, vous pouvez nous contacter à l'adresse email suivante : contact@martinbaptiste.fr</p>
+
+                <h3>5. Cookies</h3>
+                <p>Ce site utilise uniquement des cookies techniques nécessaires à son fonctionnement (gestion du formulaire de contact). Aucun cookie de tracking ou d'analyse n'est utilisé.</p>
+
+                <h3>6. Contact</h3>
+                <p>Pour toute question concernant ces mentions légales, vous pouvez nous contacter à l'adresse suivante : contact@martinbaptiste.fr</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('legalModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('legalModal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Fermer la modal en cliquant sur l'overlay
+        document.getElementById('legalModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Fermer la modal avec la touche Escape
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
 </body>
 
 </html>
