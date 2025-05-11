@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+
+# Rediriger tout le trafic HTTP vers HTTPS
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Permettre l'accès direct au fichier contact.php
+RewriteRule ^forms/contact.php$ - [L]
