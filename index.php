@@ -114,7 +114,7 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
                                 </p>
                             </div>
                             <div class="col-12 text-center cv-container" data-aos="fade-up" data-aos-delay="300">
-                                <a class="cv" href="assets/pdf/CV-Baptiste-Martin.pdf">Télécharger le CV</a>
+                                <a class="cv" href="assets/pdf/CV_Baptiste_Martin.pdf">Télécharger le CV</a>
                             </div>
                         </div>
                     </div>
@@ -310,6 +310,9 @@ $_SESSION['captcha_result'] = $num1 + $num2; // Stocke la réponse dans la sessi
                             <li>Livraison en 4 à 6 semaines</li>
                         </ul>
                     </div>
+                </div>
+                <div class="col-12 text-center tarif-container">
+                    <a class="price-button" href="assets/pdf/Grille_Tarifaire.pdf">Télécharger la grille tarifaire détaillée</a>
                 </div>
             </div>
         </section>
